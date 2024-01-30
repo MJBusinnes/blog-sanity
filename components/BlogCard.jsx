@@ -1,3 +1,4 @@
+import Markdown from "react-markdown";
 import Image from "next/image";
 import Link from "next/link";
 Link
@@ -24,8 +25,9 @@ const BlogCard = ({postData}) => {
           {postData.title}
         </h1>    
         </div>
+        
         <div>
-        <p className="line-clamp-2 text-primary-dark">
+        <p className="line-clamp-2 text-primary-dark mb-8 mt-8">
         {postData.body}
         </p>
         </div> 

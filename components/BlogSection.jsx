@@ -12,7 +12,7 @@ const BlogSection = async () => {
       </div>
       <ul className='flex flex-row flex-wrap justify-between space-y-8'>
         {posts.map((post) =>(
-          <li key={post.Id} className='mt-8'>
+          <li key={post._id} className='mt-8 mb-8'>
           <BlogCard postData={post} />
           </li>
         ))}

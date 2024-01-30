@@ -25,17 +25,29 @@ const SingleBlogPost = async ({params}) => {
         </div>
         
         <div>
-          <p>
+          <p className='leading-relaxed'>
             Por{" "}
             <span className="font-semibold text-primary-brand">
               {singlePost.author.name}
             </span>
           </p>
         </div>
-        <div>
-          <PortableText value={singlePost.content} />
-        </div>
-      </div>  
+        
+  <PortableText 
+    value={singlePost.content} 
+    serializers={{
+      types: {
+        block: props =>
+          // Check if we have an override for the “style”
+          props.node.style === 'normal'
+            ? // if normal, return a p with a className
+              <p className="leading-relaxed">{props.children}</p>
+            : // If not “normal”, fall back to the provided default
+              <>{props.children}</>
+      }
+    }}
+  />  
+</div>
   )
   
 };
