@@ -8,7 +8,7 @@ const BlogSection = async () => {
   return (
     <div className='flex flex-col lg:px-40 px-4'>
       <div className='flex justify-center my-4'>
-        <h1 className='capitalize text-5xl font-semibold'>ARTIGOS RECENTES</h1>
+        <h1 className='capitalize text-4xl font-semibold'>ARTIGOS RECENTES</h1>
       </div>
       <ul className='flex flex-row flex-wrap justify-between space-y-8'>
         {posts.map((post) =>(

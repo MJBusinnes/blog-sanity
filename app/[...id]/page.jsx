@@ -13,13 +13,13 @@ const SingleBlogPost = async ({params}) => {
       <div className="flex space-y-8 my-8 flex-col lg:px-96 px-4 min-h-screen">
         <div className="w-full flex flex-col justify-center space-y-8 items-center">
           <h1 className="text-3xl text-primary-dark font-semibold drop-shadow-md">
-            {singlePost.title}
+            {singlePost && singlePost.title}
           </h1>
           <Image
-          src={singlePost.image}
+          src={singlePost && singlePost.image}
           width={600}
           height={200}
-          alt={singlePost.title}
+          alt={singlePost && singlePost.title}
           className="backdrop-brightness-100"
           />
         </div>
@@ -28,13 +28,14 @@ const SingleBlogPost = async ({params}) => {
           <p className='leading-relaxed'>
             Por{" "}
             <span className="font-semibold text-primary-brand">
-              {singlePost.author.name}
+              {singlePost && singlePost.author && singlePost.author.name}
             </span>
           </p>
         </div>
         
-  <PortableText 
-    value={singlePost.content} 
+        {singlePost && singlePost.content && (
+  <PortableText
+    value={singlePost.content}
     serializers={{
       types: {
         block: props =>
@@ -46,7 +47,9 @@ const SingleBlogPost = async ({params}) => {
               <>{props.children}</>
       }
     }}
-  />  
+  />
+)}
+  
 </div>
   )
   
