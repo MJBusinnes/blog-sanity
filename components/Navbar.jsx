@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="p-2 px-4 rounded-full">
         <Link href="/">
           <Image
-            src="/images/AIdea-logo-1.png"
+            src="/logo.png"
             width={40}
             height={40}
             alt="logo"
