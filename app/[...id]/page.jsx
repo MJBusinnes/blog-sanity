@@ -13,29 +13,44 @@ const SingleBlogPost = async ({params}) => {
       <div className="flex space-y-8 my-8 flex-col lg:px-96 px-4 min-h-screen">
         <div className="w-full flex flex-col justify-center space-y-8 items-center">
           <h1 className="text-3xl text-primary-dark font-semibold drop-shadow-md">
-            {singlePost.title}
+            {singlePost && singlePost.title}
           </h1>
           <Image
-          src={singlePost.image}
+          src={singlePost && singlePost.image}
           width={600}
           height={200}
-          alt={singlePost.title}
+          alt={singlePost && singlePost.title}
           className="backdrop-brightness-100"
           />
         </div>
         
         <div>
-          <p>
+          <p className='leading-relaxed'>
             Por{" "}
             <span className="font-semibold text-primary-brand">
-              {singlePost.author.name}
+              {singlePost && singlePost.author && singlePost.author.name}
             </span>
           </p>
         </div>
-        <div>
-          <PortableText value={singlePost.content} />
-        </div>
-      </div>  
+        
+        {singlePost && singlePost.content && (
+  <PortableText
+    value={singlePost.content}
+    serializers={{
+      types: {
+        block: props =>
+          // Check if we have an override for the “style”
+          props.node.style === 'normal'
+            ? // if normal, return a p with a className
+              <p className="leading-relaxed">{props.children}</p>
+            : // If not “normal”, fall back to the provided default
+              <>{props.children}</>
+      }
+    }}
+  />
+)}
+  
+</div>
   )
   
 };
