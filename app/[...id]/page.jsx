@@ -49,7 +49,6 @@ const SingleBlogPost = async ({params}) => {
     }}
   />
 )}
-  
 </div>
   )
   

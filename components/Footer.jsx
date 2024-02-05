@@ -1,9 +1,12 @@
+'use client';
+
 import { SocialIcon } from 'react-social-icons';
 import Image from "next/image";
+import CookieNotification from './CookieNotification';
 
 const Footer = () => {
   return (
-    <div className="grid grid-cols-1 bg-[#2f343f] sm:grid-cols-2 lg:grid-cols-3 items-center h-70 mb-18">
+    <div className="grid grid-cols-1 bg-[rgb(47,52,63)] sm:grid-cols-2 lg:grid-cols-3 items-center h-70 mb-18">
       <a href="/" className='flex items-center mx-auto'>
         <Image
           className='h-8 w-10 flex items-center mx-auto mt-8'
@@ -38,7 +41,17 @@ const Footer = () => {
       <div className='text-center px-0 sm:py-8 text-white mt-16 mb-8'>
         <p>©Copyright 2024 - Todos os direitos reservados | <span className="text-[#44E3D3]">Termos de Uso.</span></p>
       </div>
+      
+    <div className="grid grid-cols-1 text-center bg-[#2f343f] sm:grid-cols-2 lg:grid-cols-3 items-center h-70 mb-18">
+      {/* ... (seu código existente) ... */}
+
+      {/* Adicione o CookieNotification aqui */}
+      <CookieNotification />
     </div>
+
+    </div>
+
+    
   );
 };
 
