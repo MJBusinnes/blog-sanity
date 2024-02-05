@@ -17,7 +17,7 @@ const Navbar = () => {
             height={40}
             alt=""
           />
-          <h1 className="flex text-gray-400 hover:text-teal-400 duration-300 px-12 -mt-7 font-semibold text-center sm:text-left">AIdea Generate</h1>
+          <h1 className="flex text-gray-600 hover:text-teal-400 duration-300 px-12 -mt-7 font-bold text-center sm:text-left">AIdea Generate</h1>
         </Link>
       </div>
 

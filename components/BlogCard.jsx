@@ -1,6 +1,7 @@
 import Markdown from "react-markdown";
 import Image from "next/image";
 import Link from "next/link";
+
 Link
 
 const BlogCard = ({postData}) => {
@@ -39,7 +40,9 @@ const BlogCard = ({postData}) => {
             </p>
             
           ))}
-        </div>      
+          
+        </div>
+            
     </div>
     </Link>
   )
