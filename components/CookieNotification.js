@@ -28,7 +28,7 @@ const CookieNotification = () => {
         <a href="/termos-de-uso" className='text-[rgb(165,253,241)] font-semibold'>
           Termos de Uso
         </a>{' '}
-        de cookies.</p>
+        .</p>
       <button onClick={handleAccept} className="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
         Aceitar
       </button>
