@@ -5,7 +5,7 @@ import BlogSection from '../components/BlogSection'
 export const metadata = {
   title: "Blog | AIdea Generate",
   description: "Receba as melhores dicas AI | Melhores PROMPTS | MATERIAIS GRÁTIS para você personalizar seu conteúdo e muito mais!"
-}
+} 
 
 export default function Home() {
   return (
