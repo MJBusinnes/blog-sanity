@@ -10,7 +10,7 @@ const Footer = () => {
       <a href="/" className='flex items-center mx-auto'>
         <Image
           className='h-8 w-10 flex items-center mx-auto mt-8'
-          src="/logo.png"
+          src="/favicon.ico"
           alt="Logo"
           width={50}
           height={30}
