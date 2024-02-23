@@ -7,10 +7,6 @@ import Footer from '/components/Footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const Metadata = {
-  title: "Blog | AIdea Generate",
-  description: 'Receba as melhores dicas AI | Melhores PROMPTS | MATERIAIS GRÁTIS para você personalizar seu conteúdo e muito mais!',
-}
 
 export default function RootLayout({ children }) {
   return (
