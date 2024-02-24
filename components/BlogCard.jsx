@@ -1,21 +1,25 @@
-import Markdown from "react-markdown";
+"use client";
+
+//import Markdown from "react-markdown";
 import Image from "next/image";
 import Link from "next/link";
 
-Link
+
 
 const BlogCard = ({postData}) => {
+  const formattedDate = postData.publishedAt ? new Date(postData.publishedAt).toISOString().substring(0, 10) : '';
+
   return (
     <Link href={`/${postData._id}`}>
     <div className='flex flex-col space-y-2 bg-primary-bg w-72 hover:scale-105 transition-transform duration-200 ease-out rounded overflow-hidden'>
         <Image src={postData.image} 
                alt="creators-content"
                width={300}
-               height={50}
+               height={200}
                />
         <div className="flex flex-col">
         <p className="font-semibold text-sm text-dark-accent">
-            {postData.author.name}, {Date(postData.publishedAt).substring(0,10)}
+            {postData.author.name}, {formattedDate} {/* {Date(postData.publishedAt).substring(0,10)} */}
         </p>
         <p className="font-semibold text-sm text-light-accent">
             Redator
