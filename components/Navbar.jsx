@@ -23,7 +23,7 @@ const Navbar = () => {
 
       {/* Botão com link externo */}
       <a
-        href="https://ai-saas-project-mu.vercel.app/"
+        href="https://aidea-generate.vercel.app/"
         target="_blank"  // Abre em uma nova aba
         rel="noopener noreferrer"  // Boas práticas de segurança para links externos
         className="bg-[#111827] text-center text-white rounded-full py-4 px-6 sm:w-auto w-full mx-4 my-2 md:my-0 leading-4"

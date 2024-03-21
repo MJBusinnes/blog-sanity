@@ -53,12 +53,12 @@ const SingleBlogPost = async ({params}) => {
       </div>
       
       <div>
-        <p className='leading-relaxed'>
+        <h2 className='leading-relaxed'>
           Por{" "}
           <span className="font-semibold text-primary-brand">
             {singlePost && singlePost.author && singlePost.author.name}
           </span>
-        </p>
+        </h2>
       </div>
       
       {singlePost && singlePost.content && (
