@@ -17,12 +17,7 @@ export default defineType({
             type: 'slug',
             options: {
                 source: 'title',
-                maxLength: 200,
-                slugify: input => input
-                         .toLowerCase()
-                         .replace(/\s+/g, '-')
-                         .slice(0, 200),
-                isUnique: isUniqueAcrossAllDocuments         
+                maxLength: 200,        
             }
         }),
         defineField({
