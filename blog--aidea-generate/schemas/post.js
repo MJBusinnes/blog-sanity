@@ -1,4 +1,5 @@
 import { defineType, defineField } from "sanity";
+import { isUniqueAcrossAllDocuments } from "../../lib/isUniqueAcrossAllDocuments";
 
 export default defineType({
     name: 'post',
@@ -16,7 +17,12 @@ export default defineType({
             type: 'slug',
             options: {
                 source: 'title',
-                maxLength: 96,
+                maxLength: 200,
+                slugify: input => input
+                         .toLowerCase()
+                         .replace(/\s+/g, '-')
+                         .slice(0, 200),
+                isUnique: isUniqueAcrossAllDocuments         
             }
         }),
         defineField({
