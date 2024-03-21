@@ -31,7 +31,7 @@ const Footer = () => {
         <div className="items-center text-sm mx-0 pr-6 pt-2 gap-4 relative h-14 w-full sm:w-40 mt-2 leading-4 sm:leading-2">
           <p className='text-center ml-5 mb-4 text-gray-400 hover:text-teal-400 duration-300 sm:text-left '>Mídias Sociais</p>
           <div className="flex items-center justify-center">
-            <SocialIcon url="http://linkedin.com/in/" className="mx-1" target="_blank" fgColor="#fff" style={{ height: 50, width: 50 }} />
+            <SocialIcon url="https://linkedin.com/company/aidea-generate" className="mx-1" target="_blank" fgColor="#fff" style={{ height: 50, width: 50 }} />
             <SocialIcon url="https://twitter.com/" className="mx-1" target="_blank" fgColor="#fff" style={{ height: 50, width: 50 }} />
             <SocialIcon url="http://instagram.com/" className="mx-1" target="_blank" fgColor="#fff" style={{ height: 50, width: 50 }} />
             <SocialIcon url="http://medium.com/" className="mx-1" target="_blank" fgColor="#fff" style={{ height: 50, width: 50 }} />
