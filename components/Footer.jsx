@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='text-center px-0 sm:py-8 text-white mt-16 mb-8'>
-        <p>©Copyright 2024 - Todos os direitos reservados | <span className="text-[#44E3D3]">Termos de Uso.</span></p>
+        <p>©Copyright 2024 - Todos os direitos reservados | <a href="https://easytermos.com.br/doc/embed/politicas-privacidade/MQ==/NTY3" target="_blank" rel="noopener noreferrer" className="text-[#44E3D3]" style={{textDecoration: 'underline'}}>Termos de Privacidade.</a></p>
       </div>
       
     <div className="grid grid-cols-1 text-center bg-[#2f343f] sm:grid-cols-2 lg:grid-cols-3 items-center h-70 mb-18">
