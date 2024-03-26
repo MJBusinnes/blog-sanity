@@ -31,7 +31,7 @@ const Footer = () => {
         <div className="items-center text-sm mx-0 pr-6 pt-2 gap-4 relative h-14 w-full sm:w-40 mt-2 leading-4 sm:leading-2">
           <p className='text-center ml-5 mb-4 text-gray-400 hover:text-teal-400 duration-300 sm:text-left '>Mídias Sociais</p>
           <div className="flex items-center justify-center">
-            <SocialIcon url="http://linkedin.com/in/" className="mx-1" target="_blank" fgColor="#fff" style={{ height: 50, width: 50 }} />
+            <SocialIcon url="https://linkedin.com/company/aidea-generate" className="mx-1" target="_blank" fgColor="#fff" style={{ height: 50, width: 50 }} />
             <SocialIcon url="https://twitter.com/" className="mx-1" target="_blank" fgColor="#fff" style={{ height: 50, width: 50 }} />
             <SocialIcon url="http://instagram.com/" className="mx-1" target="_blank" fgColor="#fff" style={{ height: 50, width: 50 }} />
             <SocialIcon url="http://medium.com/" className="mx-1" target="_blank" fgColor="#fff" style={{ height: 50, width: 50 }} />
@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='text-center px-0 sm:py-8 text-white mt-16 mb-8'>
-        <p>©Copyright 2024 - Todos os direitos reservados | <span className="text-[#44E3D3]">Termos de Uso.</span></p>
+        <p>©Copyright 2024 - Todos os direitos reservados | <a href="https://easytermos.com.br/doc/embed/politicas-privacidade/MQ==/NTY3" target="_blank" rel="noopener noreferrer" className="text-[#44E3D3]" style={{textDecoration: 'underline'}}>Termos de Privacidade.</a></p>
       </div>
       
     <div className="grid grid-cols-1 text-center bg-[#2f343f] sm:grid-cols-2 lg:grid-cols-3 items-center h-70 mb-18">
